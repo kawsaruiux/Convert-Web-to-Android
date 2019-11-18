@@ -9,7 +9,7 @@
     tools:layout_editor_absoluteY = "81dp">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/back_arrow"
         android:layout_width="25sp"
         android:layout_height="wrap_content"
         android:layout_x="-5dp"
@@ -23,7 +23,7 @@
         app:srcCompat="?attr/actionModeCloseDrawable" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/refresh_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_x="164dp"
@@ -31,7 +31,7 @@
         app:layout_constraintBottom_toTopOf="@+id/webView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.919"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/back_arrow"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.625"
         app:srcCompat="@drawable/ic_refresh_black_24dp" />

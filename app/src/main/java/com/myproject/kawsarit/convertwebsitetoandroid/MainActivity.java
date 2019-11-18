@@ -6,10 +6,12 @@ import android.os.Bundle;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
     private WebView mywebView;
+    private ImageView backArrow, refreshIcon;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mywebView = (WebView) findViewById(R.id.webView);
+        backArrow = (ImageView) findViewById(R.id.back_arrow);
+        refreshIcon = (ImageView) findViewById(R.id.refresh_icon);
 
         mywebView.setWebViewClient(new WebViewClient());
         mywebView.getSettings().setJavaScriptEnabled(true);
